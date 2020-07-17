@@ -57,7 +57,7 @@
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Reconocido como:</div>
-                    Luis Herrera
+                    <c:out value="${username}"></c:out>
                 </div>
             </nav>
         </div>
