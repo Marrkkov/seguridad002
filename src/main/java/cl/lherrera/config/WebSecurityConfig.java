@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         String adminUsername = "admin@mail.cl";
         String adminPassword = passwordEncoder().encode("1234");
         String adminRole = "ADMIN";
-        
+
         String userUsername = "user@mail.cl";
         String userPassword = passwordEncoder().encode("1234");
         String userRole = "USER";
@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         auth.inMemoryAuthentication()
         .withUser(adminUsername).password(adminPassword).roles(adminRole)
         .and()
-        .withUser(userUsername).password(adminPassword).roles(userRole);
+        .withUser(userUsername).password(userPassword).roles(userRole);
         
     }
     
@@ -67,7 +67,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         .defaultSuccessUrl("/")
         // manejamos el recurso no permitido
         .and().exceptionHandling().accessDeniedPage("/recurso-prohibido");
-        
+
     }
 
     @Bean
@@ -76,17 +76,3 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

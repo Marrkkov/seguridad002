@@ -64,7 +64,7 @@
 											<label class="small mb-1" for="inputPassword">Contraseña</label>
 											<input id="password" name="password"
 												class="form-control py-4" id="inputPassword" type="password"
-												placeholder="Ingrese su contraseÃ±a" />
+												placeholder="Ingrese su contraseña" />
 										</div>
 
 										<div
