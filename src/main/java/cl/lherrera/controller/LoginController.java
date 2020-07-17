@@ -10,7 +10,9 @@ public class LoginController {
 
     @GetMapping("/")
     public String main() {
-        return "redirect:home";
+        
+        System.out.println("pasé!!!");
+        return "redirect:/home";
     }
 
     @GetMapping("/login")
