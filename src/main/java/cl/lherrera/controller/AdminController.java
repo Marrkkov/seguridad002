@@ -48,7 +48,7 @@ public class AdminController {
         
         personas.add(persona);
         
-        session.setAttribute("personas", persona);
+        session.setAttribute("personas", personas);
         
         return "redirect:home";
         

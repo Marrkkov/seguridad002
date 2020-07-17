@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,15 +49,17 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Título prueba</div>
-                        <a class="nav-link" href="#">
-                            <div class="sb-nav-link-icon"><i class="fa fa-child"></i></div>
+                        <a class="nav-link" href="<c:out value='/home' />">
+                            <div class="sb-nav-link-icon">
+                            <i class="far fa-thumbs-up"></i>
+                            </div>
                             Home
                         </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Reconocido como:</div>
-                    Luis Herrera
+                    <c:out value="${username}"></c:out>
                 </div>
             </nav>
         </div>
@@ -66,7 +71,7 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Administración del sitio</h1>
 
-                    <form action="/home" method="post">
+                    <form action="<c:url value='/admin' />" method="post">
 
                         <div class="form-group">
                             <label for="id">Identificador</label> <input

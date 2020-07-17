@@ -18,7 +18,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <div class="text-center mt-4">
-                                    <h1 class="display-1">401</h1>
+                                    <h1 class="display-1">403</h1>
                                     <p class="lead">Sin autorización</p>
                                     <p>El acceso a este recurso está prohibido.</p>
                                     <a href="/">
